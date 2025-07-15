@@ -12,7 +12,7 @@ body{
     width: 100vw;
     height: 100vh;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     z-index:2;
 }
 h1{
@@ -27,7 +27,7 @@ h1{
 
 .drag{
     position: relative;
-    right: 30px;
+    right: 50px;
     width: 320px;
     /* border: 2px solid black; */
     display: flex;
@@ -55,8 +55,8 @@ h1{
 
 .drop{
     position:relative;
-    top: 30px;
-    left: 30px;
+    top: 10px;
+    left: 50px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 5px;
@@ -66,7 +66,25 @@ h1{
 
 .dropbox{
     position: relative;
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
     background-color: #061e3199;
+}
+#reset{
+    position: absolute;
+    bottom: 50px;
+    width: 300px;
+    padding: 10px 25px;
+    font-size: 25px;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(3, 170, 170, 0.911);
+    box-shadow: 7px 7px 20px #879096;
+    color: black;
+    z-index: 3;
+    cursor: pointer;
+}
+#reset:hover{
+    background-color: rgba(5, 223, 223, 0.911);
 }
