@@ -16,3 +16,7 @@ function dropOver(event){
     event.preventDefault();
 }
 
+function drop(event){
+    let data = event.dataTransfer.getData("text");
+    event.target.appendChild(document.getElementById(data));
+}
